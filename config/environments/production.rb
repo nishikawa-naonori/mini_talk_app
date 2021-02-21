@@ -111,6 +111,10 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   ActionCable.server.config.disable_request_forgery_protection = true
-  config.action_cable.url = "wss://【mini-talk-app】.herokuapp.com/cable" 
-  config.action_cable.allowed_request_origins = ['https://【mini-talk-app】.herokuapp.com', 'http://【mini-talk-app】.herokuapp.com']
+  config.action_cable.url = "wss://mini-talk-app-33453.herokuapp.com/cable" 
+  config.action_cable.allowed_request_origins = ['https://mini-talk-app-33453.herokuapp.com', 'http://mini-talk-app-33453.herokuapp.com']
+
+  ActionCable.server.config.disable_request_forgery_protection = true
+  config.action_cable.url = "ws://【18.180.91.142】/cable" 
+  config.action_cable.allowed_request_origins = ['http://【18.180.91.142】']
 end
